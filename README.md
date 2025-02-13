@@ -117,4 +117,8 @@ Port Scanning:
 - python main.py --scan example.com 80 443 22
 
 Brute Forcing: 
-- python main.py --brute example.com username password123 admin123 secretpassword test 
+- python main.py --brute example.com username password123 admin123 secretpassword test
+
+![Screenshot 2025-02-13 143639](https://github.com/user-attachments/assets/91e73c62-d77a-489f-8019-760967c3eb52)
+
+
