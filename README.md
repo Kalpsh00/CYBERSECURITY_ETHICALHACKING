@@ -91,3 +91,30 @@ Response Analysis: If the response contains the injected payload, the script fla
 ![Image](https://github.com/user-attachments/assets/a58311c5-946d-418f-abfe-5cccc526e2fe)
 
 
+# TASK DESCRIPTION OF TASK 3
+
+
+# Project Structure
+First, create a project directory called pen_test_toolkit. Inside this directory, create a modules folder containing Python scripts for each module, and ensure there's an __init__.py file to mark it as a package. Also, create a main.py script and a README.md file in the root directory.
+
+Port Scanner Module: 
+
+Create a file named port_scanner.py within the modules directory. This module will use Python’s socket library to scan specified ports on a given target. The function scan_ports takes a target and a list of ports, attempts to connect to each port, and returns a list of open ports.
+
+Brute Forcer Module
+
+Next, create brute_forcer.py within the modules directory. This module includes a function validate_http_basic_auth that attempts HTTP Basic Authentication using the requests library. It tries various username-password combinations against a target URL. The function brute_force iterates through a list of passwords, using the validation function to check each one.
+
+# Main Script
+
+The main.py script ties everything together. Use the argparse library to parse command-line arguments for each module. The script should handle port scanning, brute forcing, and HTTP server scanning based on the provided arguments.
+
+To ensure the script finds the modules directory, adjust the Python path using sys.path.insert. This line of code makes sure the interpreter is aware of the modules directory.
+
+# Running the Toolkit
+
+Port Scanning:
+- python main.py --scan example.com 80 443 22
+
+Brute Forcing: 
+- python main.py --brute example.com username password123 admin123 secretpassword test 
