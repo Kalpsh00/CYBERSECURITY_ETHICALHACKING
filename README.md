@@ -121,4 +121,7 @@ Brute Forcing:
 
 ![Screenshot 2025-02-13 143639](https://github.com/user-attachments/assets/91e73c62-d77a-489f-8019-760967c3eb52)
 
+![Screenshot 2025-02-13 143601](https://github.com/user-attachments/assets/5a6edb88-f7fb-47bb-81a8-9c407f14e0b6)
+
+
 
