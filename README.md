@@ -83,6 +83,8 @@ Testing Function: The find_xss_vulnerabilities function replaces a placeholder i
 Response Analysis: If the response contains the injected payload, the script flags the URL as potentially vulnerable to XSS. This indicates that the application is reflecting the untrusted input back to the user without proper sanitization.
 # HERE the Target website is beyondordinary.in.
 
+# Output of TASK 2
+
 
 ![Image](https://github.com/user-attachments/assets/796b453a-daa8-430f-8a5b-abb0909d8519)
 
