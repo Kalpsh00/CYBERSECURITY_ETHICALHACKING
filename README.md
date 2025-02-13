@@ -14,14 +14,14 @@
 
 # TASK DESCRIPTION OF TASK1
 
-# File integrity checking and monitoring are essential practices in ensuring the security and reliability of files within a system. By using the hashlib module in Python, you can create a robust solution to monitor file changes effectively.
+ File integrity checking and monitoring are essential practices in ensuring the security and reliability of files within a system. By using the hashlib module in Python, you can create a robust solution to monitor file changes effectively.
 
-# Purpose of File Integrity Checking:
+ Purpose of File Integrity Checking:
 
-# File integrity checking involves verifying that a file's content remains unchanged. This is crucial in various scenarios, such as:
-# Ensuring that software distributions are not tampered with.
-# Verifying backups to ensure they are intact.
-# Monitoring sensitive files for unauthorized modifications.
+File integrity checking involves verifying that a file's content remains unchanged. This is crucial in various scenarios, such as:
+ Ensuring that software distributions are not tampered with.
+ Verifying backups to ensure they are intact.
+ Monitoring sensitive files for unauthorized modifications.
 
 # Explanation of my python script for file integrity checker and monitoring.
 
