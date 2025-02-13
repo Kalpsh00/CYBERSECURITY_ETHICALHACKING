@@ -54,11 +54,11 @@ At the end function call of monitor_file is done to monitor files
 
 WEB APPLICATION VULNERABILITY SCANNER
 
-SQL Injection (SQLi):
+# SQL Injection (SQLi):
 
 SQL Injection is a type of attack that allows an attacker to interfere with the queries that an application makes to its database. This vulnerability occurs when an application includes untrusted data in a SQL query without proper validation or sanitization. Attackers can manipulate SQL queries by injecting malicious SQL code into input fields, such as login forms or search boxes.
 
-Example Script Explanation:
+# Example Script Explanation:
 
 The SQLi script provided earlier demonstrates a basic testing tool that sends a series of predefined SQL injection payloads to a specified URL. The script constructs URLs with these payloads and sends GET requests to the target application. It checks the responses for common indicators of SQL injection vulnerabilities, such as error messages or database-related keywords.
 
@@ -67,9 +67,10 @@ Payloads:
 The script includes a list of common SQL injection payloads designed to manipulate SQL queries. These payloads can bypass authentication, extract sensitive data, or even modify the database.
 Testing Function: The test_sql_injection function iterates over the payloads, constructs URLs with the payloads, and sends requests to the target application. It analyzes the responses to identify potential vulnerabilities.
 Response Analysis: If the response contains error messages or database-related terms, the script flags the URL as potentially vulnerable to SQL injection.
-SQL injection can lead to severe consequences, including unauthorized access to sensitive data, data manipulation, and even complete database compromise. Organizations must implement proper input validation, parameterized queries, and prepared statements to mitigate SQL injection risks. HERE the Target website is testphp.webvuln.com.
+SQL injection can lead to severe consequences, including unauthorized access to sensitive data, data manipulation, and even complete database compromise. Organizations must implement proper input validation, parameterized queries, and prepared statements to mitigate SQL injection risks. 
+# HERE the Target website is testphp.webvuln.com.
 
-Cross-Site Scripting (XSS)
+# Cross-Site Scripting (XSS)
 
 Cross-Site Scripting is a vulnerability that allows attackers to inject malicious scripts into web pages viewed by other users. XSS attacks occur when an application includes untrusted data in a web page without proper encoding or escaping. This can lead to various malicious activities, such as session hijacking, defacement, or redirecting users to malicious sites.
 
@@ -79,7 +80,8 @@ The XSS script provided demonstrates a basic testing tool that checks for potent
 Payload: 
 - The script uses a basic JavaScript payload (<script>alert('XSS')</script>) designed to trigger an alert box when executed in a browser. This payload is a common test for XSS vulnerabilities.
 Testing Function: The find_xss_vulnerabilities function replaces a placeholder in the URL with the XSS payload and sends a GET request to the target application.
-Response Analysis: If the response contains the injected payload, the script flags the URL as potentially vulnerable to XSS. This indicates that the application is reflecting the untrusted input back to the user without proper sanitization.  HERE the Target website is beyondordinary.in.
+Response Analysis: If the response contains the injected payload, the script flags the URL as potentially vulnerable to XSS. This indicates that the application is reflecting the untrusted input back to the user without proper sanitization.
+# HERE the Target website is beyondordinary.in.
 
 
 ![Image](https://github.com/user-attachments/assets/796b453a-daa8-430f-8a5b-abb0909d8519)
